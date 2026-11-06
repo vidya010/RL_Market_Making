@@ -1,0 +1,7 @@
+[PILOT run (plumbing check on a tiny slice - NOT evidence about the method)] 2 hourly test episodes on 2026-09-01; CQL = checkpoint 2000, benchmark = fixed spread 3 ticks (both frozen on validation).
+Net PnL after costs: CQL -33.30 USDT vs Fixed spread (3 ticks) -57.75 USDT; mean per-hour difference +12.225 USDT, paired-bootstrap 95% interval [+6.208, +18.241] (excludes zero; indicative only).
+Risk: Sharpe (1-min, non-annualised) -0.399 vs -0.642; max drawdown 37.42 vs 58.05 USDT; mean |inventory| 0.0155 vs 0.0190 BTC.
+Execution quality: 5 s mark-out per passive fill -60.52 vs -78.70 ticks; order fill rate 0.959 vs 0.925; PnL per BTC traded -21.56 vs -22.40 USDT; fees paid 25.08 vs 41.13 USDT.
+Never-quote monitor: CQL quotes in 96.2% of decisions.
+Both strategies lose money after costs. With the base-tier maker fee (2 bps) far above the tick spread this is the expected outcome of the fee assumption (see 19.2), not necessarily an implementation defect; the relative comparison is still meaningful only in the sense of smaller losses at equal conditions.
+Literature: published results are not comparable to these numbers (different markets, data, costs, protocols) and none are claimed here.

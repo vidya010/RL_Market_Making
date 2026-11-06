@@ -1,0 +1,12 @@
+{
+ "book": {
+  "file": "binance-futures_incremental_book_L2_2026-08-01_BTCUSDT.csv.gz",
+  "bytes": 423320166,
+  "sha256": "bc7b4e6206bdbd893da75d035f63128b518ed34f3dd6490da71f96c72fe2a4cc"
+ },
+ "trades": {
+  "file": "binance-futures_trades_2026-08-01_BTCUSDT.csv.gz",
+  "bytes": 8954358,
+  "sha256": "27622702d5e33e6d374ec3d6f9040e8d7550ca9229641bccb6289d64256e4afe"
+ }
+}

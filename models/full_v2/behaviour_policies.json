@@ -1,0 +1,81 @@
+[
+ {
+  "pid": 0,
+  "name": "fixed_1t",
+  "kind": "fixed_spread",
+  "half_spread_ticks": 1,
+  "refresh_s": 1
+ },
+ {
+  "pid": 1,
+  "name": "fixed_3t",
+  "kind": "fixed_spread",
+  "half_spread_ticks": 3,
+  "refresh_s": 5
+ },
+ {
+  "pid": 2,
+  "name": "fixed_5t",
+  "kind": "fixed_spread",
+  "half_spread_ticks": 5,
+  "refresh_s": 15
+ },
+ {
+  "pid": 3,
+  "name": "as_low_v2",
+  "kind": "avellaneda_stoikov",
+  "gamma": 0.02,
+  "kappa": 1.5,
+  "tau_s": 1.0,
+  "sigma_cap_ticks": 10.0,
+  "inventory_unit_btc": 0.002
+ },
+ {
+  "pid": 4,
+  "name": "as_high_v2",
+  "kind": "avellaneda_stoikov",
+  "gamma": 0.1,
+  "kappa": 1.5,
+  "tau_s": 1.0,
+  "sigma_cap_ticks": 10.0,
+  "inventory_unit_btc": 0.002
+ },
+ {
+  "pid": 5,
+  "name": "queue_joiner",
+  "kind": "queue_aware_joiner",
+  "threshold_btc": 3.0,
+  "cancel_mult": 2.0
+ },
+ {
+  "pid": 6,
+  "name": "noisy_fixed",
+  "kind": "noisy_fixed_spread",
+  "p_random": 0.3,
+  "base": {
+   "pid": -1,
+   "name": "noisy_base",
+   "kind": "fixed_spread",
+   "half_spread_ticks": 3,
+   "refresh_s": 5
+  },
+  "rule": "each step: u~U(0,1) from a per-episode numpy PCG64 stream seeded with episode_seed; if u<p -> uniformly random action among valid_mask(); else base policy"
+ },
+ {
+  "pid": 7,
+  "name": "flow_skew",
+  "kind": "flow_skew",
+  "flow_thr": 0.6294101714970957,
+  "inv_cap": 0.5,
+  "rule": "s=0.6*imb5+0.4*flow5; s>thr: bid only; s<-thr: ask only; else join both; inventory unwind above cap"
+ },
+ {
+  "pid": 8,
+  "name": "toxicity_gate",
+  "kind": "toxicity_gate",
+  "sig_hi": 12.0,
+  "ber_gap": 0.1,
+  "inv_cap": 0.5,
+  "rule": "stand aside if sigma>=sig_hi; drop bid if BER gap>=gap, drop ask if <=-gap; else join both; inventory unwind above cap"
+ }
+]

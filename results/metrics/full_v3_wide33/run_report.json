@@ -1,0 +1,129 @@
+{
+ "run_mode": "full",
+ "finished_at": "2026-11-02T17:38:30.830210Z",
+ "versions": {
+  "hftbacktest": "2.4.4",
+  "d3rlpy": "2.8.1",
+  "torch": "2.15.0+cpu",
+  "numpy": "2.2.6",
+  "numba": "0.68.1",
+  "pandas": "3.1.0",
+  "polars": "2.1.0",
+  "scipy": "1.18.1",
+  "scikit-learn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "seaborn": "0.13.2",
+  "tqdm": "4.70.1",
+  "python": "3.13.15",
+  "device": "cpu:0"
+ },
+ "device": "cpu:0",
+ "days": {
+  "train": [
+   "2025-11-01",
+   "2025-12-01",
+   "2026-01-01",
+   "2026-02-01",
+   "2026-03-01",
+   "2026-04-01",
+   "2026-05-01",
+   "2026-06-01"
+  ],
+  "val": [
+   "2026-07-01",
+   "2026-08-01"
+  ],
+  "test": [
+   "2026-09-01",
+   "2026-10-01"
+  ]
+ },
+ "behaviour_episodes": 1728,
+ "transitions": 6210720,
+ "cql_total_steps": 200000,
+ "selection": {
+  "cql_step": 200000,
+  "benchmark_hs_bps": 8.0
+ },
+ "test_episodes": 48,
+ "lam": {
+  "inv": 140.89338522441204,
+  "as": 11.7258642017499,
+  "ex": 1.0
+ },
+ "reward_scale": 0.16871277127970002,
+ "protocol": {
+  "exchange": "binance-futures",
+  "symbol": "BTCUSDT",
+  "market_type": "USDT-M perpetual",
+  "test_days": [
+   "2026-09-01",
+   "2026-10-01"
+  ],
+  "episodes": 48,
+  "maker_fee": 0.0002,
+  "taker_fee": 0.0005,
+  "entry_latency_ms": 20.0,
+  "resp_latency_ms": 20.0,
+  "queue_model": "risk_adverse_queue_model + no_partial_fill_exchange",
+  "sizes_btc": [
+   0.002,
+   0.005
+  ],
+  "half_spread_levels_bps": [
+   3.0,
+   5.0,
+   8.0,
+   13.0,
+   22.0
+  ],
+  "skew_modes": [
+   "bid_lean",
+   "balanced",
+   "ask_lean"
+  ],
+  "skew_shift_bps": 1.5,
+  "max_inv_btc": 0.03,
+  "decision_dt_s": 1,
+  "warmup_s": 120,
+  "episode_s": 3600,
+  "requote_cost_ticks": 0.5,
+  "markout_tau_s": 5,
+  "terminal_liquidation": "market order(s) capped at top-of-book quantity, up to 6 repeats, merged into the last transition"
+ },
+ "bootstrap": {
+  "mean_diff_per_hour": -0.3398926239583358,
+  "ci95": [
+   -0.7105102760416624,
+   0.0033805210989566155
+  ],
+  "n_hours": 48,
+  "share_hours_cql_better": 0.2916666666666667
+ },
+ "bootstrap_vs_standaside": {
+  "mean_diff_per_hour": -0.17150298916666173,
+  "ci95": [
+   -0.40569868886978794,
+   0.06885745889061691
+  ],
+  "n_hours": 48,
+  "share_hours_cql_better": 0.22916666666666666
+ },
+ "fee_scenario": "base",
+ "fees": [
+  0.0002,
+  0.0005
+ ],
+ "policies": [
+  "fixed_5bp",
+  "fixed_8bp",
+  "fixed_13bp",
+  "as_low_grid",
+  "as_high_grid",
+  "queue_aware",
+  "noisy_grid",
+  "flow_skew",
+  "toxicity_gate"
+ ],
+ "run_tag": "full_v3_wide33"
+}

@@ -1,0 +1,8 @@
+# Ignore specific folders
+_scratch/
+.ipynb_checkpoints/
+data/
+debug/
+
+# Ignore all Jupyter Notebook files
+*.ipynb

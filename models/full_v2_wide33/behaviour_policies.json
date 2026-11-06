@@ -1,0 +1,83 @@
+[
+ {
+  "pid": 0,
+  "name": "fixed_2bp",
+  "kind": "fixed_spread",
+  "half_spread_bps": 2.0,
+  "refresh_s": 1,
+  "skew": "balanced"
+ },
+ {
+  "pid": 1,
+  "name": "fixed_3bp",
+  "kind": "fixed_spread",
+  "half_spread_bps": 3.0,
+  "refresh_s": 5,
+  "skew": "balanced"
+ },
+ {
+  "pid": 2,
+  "name": "fixed_6bp",
+  "kind": "fixed_spread",
+  "half_spread_bps": 6.0,
+  "refresh_s": 15,
+  "skew": "balanced"
+ },
+ {
+  "pid": 3,
+  "name": "as_low_grid",
+  "kind": "avellaneda_stoikov_grid",
+  "gamma": 0.5,
+  "kappa": 1.5,
+  "tau_s": 1.0,
+  "sigma_cap_ticks": 10.0,
+  "note": "stationary A-S target projected to 5 half-spread levels; inventory sign selects skew"
+ },
+ {
+  "pid": 4,
+  "name": "as_high_grid",
+  "kind": "avellaneda_stoikov_grid",
+  "gamma": 5.0,
+  "kappa": 1.5,
+  "tau_s": 1.0,
+  "sigma_cap_ticks": 10.0,
+  "note": "stationary A-S target projected to 5 half-spread levels; inventory sign selects skew"
+ },
+ {
+  "pid": 5,
+  "name": "queue_aware",
+  "kind": "queue_aware_spread",
+  "threshold_btc": 3.0,
+  "rule": "select 2/3/6 bps half-spread from mean best-level displayed depth; skew toward the thinner side"
+ },
+ {
+  "pid": 6,
+  "name": "noisy_grid",
+  "kind": "noisy_grid_policy",
+  "p_random": 0.3,
+  "base": {
+   "pid": -1,
+   "name": "noisy_base",
+   "kind": "fixed_spread",
+   "half_spread_bps": 3.0,
+   "refresh_s": 5,
+   "skew": "balanced"
+  },
+  "rule": "per step choose a uniformly random currently valid action with probability p; otherwise use base"
+ },
+ {
+  "pid": 7,
+  "name": "flow_skew",
+  "kind": "flow_skew_grid",
+  "flow_thr": 0.6294101714970957,
+  "rule": "buy pressure -> bid-lean; sell pressure -> ask-lean; neutral -> balanced; inventory extreme overrides signal"
+ },
+ {
+  "pid": 8,
+  "name": "toxicity_gate",
+  "kind": "toxicity_gate_grid",
+  "sig_hi": 12.0,
+  "ber_gap": 0.1,
+  "rule": "stand aside in high volatility unless inventory requires skew; BER selects protective skew"
+ }
+]

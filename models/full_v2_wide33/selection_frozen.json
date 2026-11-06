@@ -1,0 +1,431 @@
+{
+ "benchmark_hs_bps": 6.0,
+ "benchmark_rule": "max validation net PnL after costs among half-spreads [2.0, 2.5, 3.0, 4.0, 6.0] bps",
+ "cql_step": 100000,
+ "cql_rule": "max validation mean risk-adjusted reward per episode subject to quoting_frac >= 0.05 and >=1 passive fill",
+ "validation_episodes": [
+  [
+   "2026-07-01",
+   0
+  ],
+  [
+   "2026-07-01",
+   1
+  ],
+  [
+   "2026-07-01",
+   2
+  ],
+  [
+   "2026-07-01",
+   3
+  ],
+  [
+   "2026-07-01",
+   4
+  ],
+  [
+   "2026-07-01",
+   5
+  ],
+  [
+   "2026-07-01",
+   6
+  ],
+  [
+   "2026-07-01",
+   7
+  ],
+  [
+   "2026-07-01",
+   8
+  ],
+  [
+   "2026-07-01",
+   9
+  ],
+  [
+   "2026-07-01",
+   10
+  ],
+  [
+   "2026-07-01",
+   11
+  ],
+  [
+   "2026-07-01",
+   12
+  ],
+  [
+   "2026-07-01",
+   13
+  ],
+  [
+   "2026-07-01",
+   14
+  ],
+  [
+   "2026-07-01",
+   15
+  ],
+  [
+   "2026-07-01",
+   16
+  ],
+  [
+   "2026-07-01",
+   17
+  ],
+  [
+   "2026-07-01",
+   18
+  ],
+  [
+   "2026-07-01",
+   19
+  ],
+  [
+   "2026-07-01",
+   20
+  ],
+  [
+   "2026-07-01",
+   21
+  ],
+  [
+   "2026-07-01",
+   22
+  ],
+  [
+   "2026-07-01",
+   23
+  ],
+  [
+   "2026-08-01",
+   0
+  ],
+  [
+   "2026-08-01",
+   1
+  ],
+  [
+   "2026-08-01",
+   2
+  ],
+  [
+   "2026-08-01",
+   3
+  ],
+  [
+   "2026-08-01",
+   4
+  ],
+  [
+   "2026-08-01",
+   5
+  ],
+  [
+   "2026-08-01",
+   6
+  ],
+  [
+   "2026-08-01",
+   7
+  ],
+  [
+   "2026-08-01",
+   8
+  ],
+  [
+   "2026-08-01",
+   9
+  ],
+  [
+   "2026-08-01",
+   10
+  ],
+  [
+   "2026-08-01",
+   11
+  ],
+  [
+   "2026-08-01",
+   12
+  ],
+  [
+   "2026-08-01",
+   13
+  ],
+  [
+   "2026-08-01",
+   14
+  ],
+  [
+   "2026-08-01",
+   15
+  ],
+  [
+   "2026-08-01",
+   16
+  ],
+  [
+   "2026-08-01",
+   17
+  ],
+  [
+   "2026-08-01",
+   18
+  ],
+  [
+   "2026-08-01",
+   19
+  ],
+  [
+   "2026-08-01",
+   20
+  ],
+  [
+   "2026-08-01",
+   21
+  ],
+  [
+   "2026-08-01",
+   22
+  ],
+  [
+   "2026-08-01",
+   23
+  ]
+ ],
+ "benchmark_val_table": [
+  {
+   "half_spread_bps": 2.0,
+   "n_episodes": 48,
+   "n_steps": 172520,
+   "net_pnl": -238.5780827099956,
+   "sharpe_1min": -0.1264409429793571,
+   "max_drawdown": 238.5780827099956,
+   "mean_abs_inv": 0.01191809065615581,
+   "markout_ticks": -47.789088575096045,
+   "markout_ticks_volw": -48.807075950795515,
+   "n_passive_fills": 3895,
+   "fill_rate_orders": 0.9262782401902497,
+   "fill_rate_qty": 0.050457252838613846,
+   "traded_volume_btc": 9.638000000000003,
+   "pnl_per_btc": -24.75389943037928,
+   "pnl_bps_notional": -4.147086862419104,
+   "fees": 129.16858271000004,
+   "slippage": -102.61209999999991,
+   "requote_cost": 8.316999999999712,
+   "vol_maker": 8.861000000000004,
+   "vol_taker": 0.777,
+   "n_orders": 4205,
+   "n_orders_filled": 3895,
+   "quoting_frac": 0.9984233712033388,
+   "reward_sum": -25366.88428995799,
+   "reward_per_episode": -528.4767560407914
+  },
+  {
+   "half_spread_bps": 2.5,
+   "n_episodes": 48,
+   "n_steps": 172520,
+   "net_pnl": -131.92068016000064,
+   "sharpe_1min": -0.07561386218365045,
+   "max_drawdown": 133.0286163000004,
+   "mean_abs_inv": 0.010142354509622075,
+   "markout_ticks": -48.94303797468339,
+   "markout_ticks_volw": -44.30584281282313,
+   "n_passive_fills": 2370,
+   "fill_rate_orders": 0.9014834537847091,
+   "fill_rate_qty": 0.030112415532651336,
+   "traded_volume_btc": 6.454000000000004,
+   "pnl_per_btc": -20.44014257204843,
+   "pnl_bps_notional": -3.4221413154110105,
+   "fees": 88.95768016,
+   "slippage": -84.19840000000009,
+   "requote_cost": 9.32329999999959,
+   "vol_maker": 5.802000000000004,
+   "vol_taker": 0.652,
+   "n_orders": 2629,
+   "n_orders_filled": 2370,
+   "quoting_frac": 0.9992116856016694,
+   "reward_sum": -19226.815836943053,
+   "reward_per_episode": -400.55866326964696
+  },
+  {
+   "half_spread_bps": 3.0,
+   "n_episodes": 48,
+   "n_steps": 172520,
+   "net_pnl": -93.29654277000259,
+   "sharpe_1min": -0.05707652398404424,
+   "max_drawdown": 104.65183027000148,
+   "mean_abs_inv": 0.008936094365870626,
+   "markout_ticks": -47.86516853932541,
+   "markout_ticks_volw": -48.5647107211401,
+   "n_passive_fills": 1513,
+   "fill_rate_orders": 0.8730525100980958,
+   "fill_rate_qty": 0.018022781744953732,
+   "traded_volume_btc": 4.202000000000002,
+   "pnl_per_btc": -22.202889759638875,
+   "pnl_bps_notional": -3.7147052080953626,
+   "fees": 60.330742770000015,
+   "slippage": -63.37514999999998,
+   "requote_cost": 9.914699999999552,
+   "vol_maker": 3.647000000000002,
+   "vol_taker": 0.555,
+   "n_orders": 1733,
+   "n_orders_filled": 1513,
+   "quoting_frac": 0.9996290285184326,
+   "reward_sum": -15607.498356150129,
+   "reward_per_episode": -325.1562157531277
+  },
+  {
+   "half_spread_bps": 4.0,
+   "n_episodes": 48,
+   "n_steps": 172520,
+   "net_pnl": -31.83853391000065,
+   "sharpe_1min": -0.022499863941428597,
+   "max_drawdown": 51.874138240001116,
+   "mean_abs_inv": 0.006718299327614191,
+   "markout_ticks": -48.1316507503416,
+   "markout_ticks_volw": -50.30858960763615,
+   "n_passive_fills": 733,
+   "fill_rate_orders": 0.8090507726269316,
+   "fill_rate_qty": 0.008270043674249838,
+   "traded_volume_btc": 2.352000000000001,
+   "pnl_per_btc": -13.53679162840163,
+   "pnl_bps_notional": -2.2656066450126686,
+   "fees": 36.52263391,
+   "slippage": -43.659299999999696,
+   "requote_cost": 11.286149999999484,
+   "vol_maker": 1.886000000000001,
+   "vol_taker": 0.46599999999999997,
+   "n_orders": 906,
+   "n_orders_filled": 733,
+   "quoting_frac": 0.9998434964062137,
+   "reward_sum": -10965.491598404598,
+   "reward_per_episode": -228.44774163342913
+  },
+  {
+   "half_spread_bps": 6.0,
+   "n_episodes": 48,
+   "n_steps": 172520,
+   "net_pnl": 8.320281360000351,
+   "sharpe_1min": 0.007965313900487265,
+   "max_drawdown": 25.91895453000012,
+   "mean_abs_inv": 0.003804822629260377,
+   "markout_ticks": -12.715648854958554,
+   "markout_ticks_volw": -22.60318471337242,
+   "n_passive_fills": 262,
+   "fill_rate_orders": 0.6405867970660146,
+   "fill_rate_qty": 0.002798743595868527,
+   "traded_volume_btc": 1.0840000000000003,
+   "pnl_per_btc": 7.675536309963421,
+   "pnl_bps_notional": 1.2821284866669702,
+   "fees": 18.38241864,
+   "slippage": -27.299000000000106,
+   "requote_cost": 13.962049999999305,
+   "vol_maker": 0.7850000000000003,
+   "vol_taker": 0.299,
+   "n_orders": 409,
+   "n_orders_filled": 262,
+   "quoting_frac": 0.9999942035706005,
+   "reward_sum": -5527.7026324588505,
+   "reward_per_episode": -115.16047150955939
+  }
+ ],
+ "cql_val_table": [
+  {
+   "step": 100000,
+   "n_episodes": 48,
+   "n_steps": 172520,
+   "net_pnl": -97.68801496000003,
+   "sharpe_1min": -0.13213768620798155,
+   "max_drawdown": 97.68801496000003,
+   "mean_abs_inv": 0.004383057036865291,
+   "markout_ticks": -49.62271897810107,
+   "markout_ticks_volw": -50.89097320169138,
+   "n_passive_fills": 1096,
+   "fill_rate_orders": 0.7901946647440519,
+   "fill_rate_qty": 0.035912917506661556,
+   "traded_volume_btc": 3.918000000000002,
+   "pnl_per_btc": -24.933132965798873,
+   "pnl_bps_notional": -4.136383781141751,
+   "fees": 54.06261496000001,
+   "slippage": -39.02570000000033,
+   "requote_cost": 4.739249999999956,
+   "vol_maker": 3.5450000000000017,
+   "vol_taker": 0.373,
+   "n_orders": 1387,
+   "n_orders_filled": 1096,
+   "quoting_frac": 0.7161952237421748,
+   "reward_sum": -6802.34457382259,
+   "reward_per_episode": -141.7155119546373,
+   "passes_guard": true
+  },
+  {
+   "step": 150000,
+   "n_episodes": 48,
+   "n_steps": 172520,
+   "net_pnl": -131.7906810599986,
+   "sharpe_1min": -0.1313660243405326,
+   "max_drawdown": 131.96256993999864,
+   "mean_abs_inv": 0.005352306978900997,
+   "markout_ticks": -57.26688453159079,
+   "markout_ticks_volw": -54.71891986673727,
+   "n_passive_fills": 1836,
+   "fill_rate_orders": 0.8337874659400545,
+   "fill_rate_qty": 0.04458464280688645,
+   "traded_volume_btc": 6.105999999999996,
+   "pnl_per_btc": -21.58379971503418,
+   "pnl_bps_notional": -3.614209784115993,
+   "fees": 80.30588106,
+   "slippage": -63.065549999999504,
+   "requote_cost": 6.08789999999991,
+   "vol_maker": 5.702999999999996,
+   "vol_taker": 0.403,
+   "n_orders": 2202,
+   "n_orders_filled": 1836,
+   "quoting_frac": 0.8026895432413633,
+   "reward_sum": -9990.156132587399,
+   "reward_per_episode": -208.12825276223748,
+   "passes_guard": true
+  },
+  {
+   "step": 200000,
+   "n_episodes": 48,
+   "n_steps": 172520,
+   "net_pnl": -85.50376087000234,
+   "sharpe_1min": -0.10746282640316981,
+   "max_drawdown": 85.97951501000244,
+   "mean_abs_inv": 0.004564317180616741,
+   "markout_ticks": -50.52690802348413,
+   "markout_ticks_volw": -47.16631323841396,
+   "n_passive_fills": 1022,
+   "fill_rate_orders": 0.7978142076502732,
+   "fill_rate_qty": 0.03558722697772773,
+   "traded_volume_btc": 3.7080000000000015,
+   "pnl_per_btc": -23.05926668554539,
+   "pnl_bps_notional": -3.8284480177956737,
+   "fees": 52.139160870000005,
+   "slippage": -36.718149999999575,
+   "requote_cost": 4.444099999999974,
+   "vol_maker": 3.3010000000000015,
+   "vol_taker": 0.407,
+   "n_orders": 1281,
+   "n_orders_filled": 1022,
+   "quoting_frac": 0.7161430558775794,
+   "reward_sum": -6938.343738945058,
+   "reward_per_episode": -144.5488278946887,
+   "passes_guard": true
+  }
+ ],
+ "lam": {
+  "inv": 92.34943898291057,
+  "as": 12.370352483811217,
+  "ex": 1.0
+ },
+ "reward_scale": 0.19780979973199417,
+ "run_mode": "full",
+ "frozen_at": "2026-11-02T10:48:24.983621Z"
+}

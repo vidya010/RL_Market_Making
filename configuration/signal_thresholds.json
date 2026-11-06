@@ -1,0 +1,7 @@
+{
+ "sig_hi": 35.42643394729734,
+ "flow_thr": 0.6294101714970957,
+ "ber_gap": 0.1,
+ "n": 900,
+ "rule": "quantiles over the first 900 s after warm-up of train day 1 hour 0: sigma q80, |flow signal| q70, |BER gap| q70"
+}

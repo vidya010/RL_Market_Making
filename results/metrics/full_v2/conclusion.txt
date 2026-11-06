@@ -1,0 +1,8 @@
+[full run] 48 hourly test episodes on 2026-09-01, 2026-10-01; CQL = checkpoint 150000, benchmark = fixed spread 5 ticks (both frozen on validation).
+Net PnL after costs: CQL +0.00 USDT vs Fixed spread (5 ticks) -2123.13 USDT; mean per-hour difference +44.232 USDT, paired-bootstrap 95% interval [+37.525, +51.301] (excludes zero; indicative only).
+Risk: Sharpe (1-min, non-annualised) nan vs -0.765; max drawdown 0.00 vs 2123.13 USDT; mean |inventory| 0.0000 vs 0.0180 BTC.
+Execution quality: 5 s mark-out per passive fill nan vs -82.98 ticks; order fill rate nan vs 0.915; PnL per BTC traded nan vs -24.53 USDT; fees paid 0.00 vs 1422.54 USDT.
+Never-quote monitor: CQL quotes in 0.0% of decisions - BELOW the monitoring floor: the policy is close to "never quote", so a PnL near zero reflects inactivity, not skill.
+Fee scenario: base (maker +2.0 bps, taker +5.0 bps)
+Reference 'stand aside' (never quote): net PnL +0.00 USDT. CQL minus stand-aside per hour: +0.000 USDT, paired-bootstrap 95% interval [+0.000, +0.000]. CQL does NOT beat doing nothing: any advantage over the fixed-spread benchmark only reflects that benchmark's losses.
+Literature: published results are not comparable to these numbers (different markets, data, costs, protocols) and none are claimed here.

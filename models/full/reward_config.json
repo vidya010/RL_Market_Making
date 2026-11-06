@@ -1,0 +1,23 @@
+{
+ "lam": {
+  "inv": 58.66323139167488,
+  "as": 3.6419567669055843,
+  "ex": 1.0
+ },
+ "reward_scale": 0.12923159932383932,
+ "rho_inv": 0.5,
+ "rho_as": 0.5,
+ "calibration": {
+  "abs_dE": 143888.1692497385,
+  "q2": 1226.3914366483248,
+  "as_": 19754.239061436492,
+  "n": 4829216
+ },
+ "markout_tau_s": 5,
+ "requote_cost_ticks": 0.5,
+ "fees": {
+  "maker": 0.0002,
+  "taker": 0.0005
+ },
+ "note": "reward = reward_from_comps(comps, lam) / reward_scale; fitted on training episodes only"
+}

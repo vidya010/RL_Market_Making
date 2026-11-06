@@ -1,0 +1,5 @@
+n_episodes,n_steps,net_pnl,sharpe_1min,max_drawdown,mean_abs_inv,markout_ticks,markout_ticks_volw,n_passive_fills,fill_rate_orders,fill_rate_qty,traded_volume_btc,pnl_per_btc,pnl_bps_notional,fees,slippage,requote_cost,vol_maker,vol_taker,n_orders,n_orders_filled,quoting_frac,reward_sum,reward_per_episode,alpha,train_min
+48,172520,0.0,,0.0,0.0,,,0,,,0.0,,,0.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,0.0,0.5,2.8636844952901206
+48,172520,0.0,,0.0,0.0,,,0,,,0.0,,,0.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,0.0,1.0,2.8700976371765137
+48,172520,0.0,,0.0,0.0,,,0,,,0.0,,,0.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,0.0,3.0,2.8886510848999025
+48,172520,0.0,,0.0,0.0,,,0,,,0.0,,,0.0,0.0,0.0,0.0,0.0,0,0,0.0,0.0,0.0,10.0,2.9244455138842267

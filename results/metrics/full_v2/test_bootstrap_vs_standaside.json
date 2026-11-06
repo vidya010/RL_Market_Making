@@ -1,0 +1,9 @@
+{
+ "mean_diff_per_hour": 0.0,
+ "ci95": [
+  0.0,
+  0.0
+ ],
+ "n_hours": 48,
+ "share_hours_cql_better": 0.0
+}

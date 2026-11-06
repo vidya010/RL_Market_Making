@@ -1,0 +1,52 @@
+{
+ "algo": "DiscreteCQL (d3rlpy 2.8.1)",
+ "config": {
+  "batch_size": 256,
+  "gamma": 0.99,
+  "lr": 0.0001,
+  "alpha": 1.0,
+  "target_update_interval": 2000,
+  "hidden": [
+   256,
+   256,
+   128
+  ],
+  "pilot_steps": 3000,
+  "full_steps": 200000,
+  "steps_per_epoch": 10000,
+  "ckpt_fracs": [
+   0.5,
+   0.75,
+   1.0
+  ]
+ },
+ "total_steps": 200000,
+ "checkpoint_steps": [
+  100000,
+  150000,
+  200000
+ ],
+ "unit": 10000,
+ "device": "cuda:0",
+ "n_episodes": 1728,
+ "n_transitions": 6210720,
+ "state_dim": 38,
+ "n_actions": 33,
+ "versions": {
+  "hftbacktest": "2.4.4",
+  "d3rlpy": "2.8.1",
+  "torch": "2.9.1+cu130",
+  "numpy": "2.2.6",
+  "numba": "0.68.0",
+  "pandas": "3.0.6",
+  "polars": "2.0.0",
+  "scipy": "1.18.0",
+  "scikit-learn": "1.9.0",
+  "matplotlib": "3.11.1",
+  "seaborn": "0.13.2",
+  "tqdm": "4.70.1",
+  "python": "3.13.14",
+  "device": "cuda:0"
+ },
+ "run_mode": "full"
+}
